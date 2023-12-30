@@ -27,7 +27,7 @@ export const Navbar = ()=>{
         <OrganizationSwitcher
           hidePersonal
           afterCreateOrganizationUrl="/organization/:id"
-          afterSelectOrganizationUrl="/organiztion/:id"
+          afterSelectOrganizationUrl="/organization/:id"
           afterLeaveOrganizationUrl="/select-org"
           appearance={{
             elements: {
