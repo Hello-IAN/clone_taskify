@@ -1,8 +1,8 @@
-const OrganiztionIdPage = () => {
+const OrganizationIdPage = () => {
   return (
     <div>
       OrganiztionIdPage
     </div>
   )
 }
-export default OrganiztionIdPage
+export default OrganizationIdPage
