@@ -13,16 +13,17 @@ export const Navbar = ()=>{
         <div className="hidden md:flex">
           <Logo />
         </div>
-        <Button size="sm" className="rounded-sm hidden md:block h-auto
+        <Button variant="primary" size="sm" className="rounded-sm hidden md:block h-auto
         py-1.5 px-2"
         >
           Create
         </Button>
-        <Button size="sm" className="rounded-sm block md:hidden">
+        <Button variant="primary" size="sm" className="rounded-sm block md:hidden">
           <Plus className="h-4 w-4" />
         </Button>
       </div>
       <div className="ml-auto flex items-center gap-x-2">
+        {/* clerk 안의 Component를 불러옴 */}
         <OrganizationSwitcher
           hidePersonal
           afterCreateOrganizationUrl="/organization/:id"
