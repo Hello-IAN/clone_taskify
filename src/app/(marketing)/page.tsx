@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
 const fira_mono = Fira_Mono({ weight:"500", subsets: ['latin'] })
-export const MarketingPage = () => {
+const MarketingPage = () => {
   return (
     <div className="flex items-center justify-center flex-col">
       <div className={cn("flex items-center justify-center flex-col",fira_mono)}>
