@@ -1,3 +1,5 @@
+"use client"
+
 import { Skeleton } from "@/components/ui/skeleton";
 import { sideBarActions, SidebarProps } from "../_interface/ISideBar";
 
@@ -24,6 +26,7 @@ export const DashboardSidebar = ({
 
 	return (
 		<div>
+			SideBar테스트
 		</div>
 	)
 
