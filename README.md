@@ -2,7 +2,7 @@
 
 This is a Clone project with 'https://www.youtube.com/watch?v=pRybm9lXW2c' for Practice Next.js and Frontend arcitecture.
 
-이 프로젝트는 Next.js와 프론트엔드 아키텍처를 연습하기 위한 클론 프로젝트('https://www.youtube.com/watch?v=pRybm9lXW2c')입니다.
+이 프로젝트는 Next.js와 프론트엔드 아키텍처를 연습하기 위한 클론 프로젝트('https://www.youtube.com/watch?v=pRybm9lXW2c') 입니다.
 
 focus on learn that how to separating U/I Logic meaning using React as UI tools and BusinessLogic meaning Actions connect to outside like a thirdparty libs or BrowserAPI.
 
