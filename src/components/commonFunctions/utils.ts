@@ -1,4 +1,4 @@
 export const getSpecificUrlPath = (url:string, id:string, suffix:string) => {
-	return `${url}/${id}/${suffix.toLowerCase()}`
+	return suffix !== "Board" ? `${url}/${id}/${suffix.toLowerCase()}` : `${url}/${id}` 
 }
 

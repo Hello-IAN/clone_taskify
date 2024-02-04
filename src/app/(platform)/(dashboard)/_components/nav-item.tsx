@@ -13,8 +13,8 @@ export const NavItem = ({
 	organization
 }:INavItemProps) => {
 	const routes = getOrganizationRoutes([
-		"Layout", 
-		"Activity", 
+		"Board",
+		"Activity",
 		"Settings", 
 		"Billing"], 
 		organization.id
