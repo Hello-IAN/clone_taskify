@@ -1,8 +1,11 @@
 import Image from "next/image"
+
 import { AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { cn } from "@/lib/utils"
 
 import { INavItemProps } from "../_interface/IDashboard"
+import { getOrganizationRoutes } from "../_utils/getOrganizationRoutes"
+import { Activity } from "lucide-react"
 
 export const NavItem = ({
 	isExpanded,
@@ -10,6 +13,10 @@ export const NavItem = ({
 	organization,
 	onExpand
 }:INavItemProps) => {
+	const routes = [
+		getOrganizationRoutes(["Layout", "Activity", "Settings", "Billing"], organization.id),
+	]
+	console.log(routes)
 	return (
 		<AccordionItem
 			value={organization.id}
