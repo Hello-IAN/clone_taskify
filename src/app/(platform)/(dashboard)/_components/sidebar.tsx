@@ -7,13 +7,13 @@ import { Plus } from "lucide-react";
 import { Accordion } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
-import { sideBarActions } from "../_hooks/ISideBar";
-import { SidebarProps } from "../_interface/interface";
+import { useGetSidebarActions } from "../_hooks/useGetSidebarActions";
+import { ISidebarProps } from "../_interface/IDashboard";
 import { NavItem } from "./nav-item";
 
 export const DashboardSidebar = ({
 	storageKey = "t-sidebar-state"
-}: SidebarProps) => {
+}: ISidebarProps) => {
 	const {
 		expanded,
 		setExpanded,
@@ -22,7 +22,7 @@ export const DashboardSidebar = ({
 		defaultAccordionValue,
 		onExpand,
 		loadingState 
-	} = sideBarActions()
+	} = useGetSidebarActions(storageKey)
 	
 	//loading short cut
 	if (loadingState)
@@ -55,11 +55,14 @@ export const DashboardSidebar = ({
 				defaultValue={defaultAccordionValue}
 				className="space-y-2"
 			>
-				<NavItem />
 				{userMemberships.data?.map(({ organization }) => (
-					<p key={organization.id}>
-						{organization.id}
-					</p>
+					<NavItem
+						key={organization.id}
+						isActive={activeOrganization?.id == organization.id}
+						isExpanded={expanded[organization.id]}
+						organization={organization}
+						onExpand={onExpand}
+					/>
 				))}
 			</Accordion>
 		</>

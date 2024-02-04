@@ -1,7 +1,7 @@
 import { useCommonLocalStorage } from "@/components/commonAdaptor/useLocalStorage"
 import { useCommonClerkOrganizatios } from "@/components/commonAdaptor/useOrganization"
 
-export const sideBarActions = (storageKey:string)=> {
+export const useGetSidebarActions = (storageKey:string)=> {
 	const useLocalStorage = useCommonLocalStorage()
 	const { useOrganization, useOrganizationList } = useCommonClerkOrganizatios();
 
@@ -22,10 +22,12 @@ export const sideBarActions = (storageKey:string)=> {
 			infinite: true,
 		},
 	})
+
 	const loadingState = (!isOrgLoaded ? true :
 			!isOrgListLoaded ? true :
 			userMemberships.isLoading ? true : 
 			false)
+			
 	const defaultAccordionValue: string[] = Object.keys(expanded).reduce((acc: string[], key:string) => {
 		if (expanded[key]) {
 			acc.push(key);
