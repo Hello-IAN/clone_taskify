@@ -1,21 +1,10 @@
 import { useCommonLocalStorage } from "@/components/commonAdaptor/useLocalStorage"
-import { useCommonUseOrganization } from "@/components/commonAdaptor/useOrganization"
+import { useCommonClerkOrganizatios } from "@/components/commonAdaptor/useOrganization"
 
-export type SidebarProps = {
-	storageKey?: string;
-}
+export const sideBarActions = (storageKey:string)=> {
+	const useLocalStorage = useCommonLocalStorage()
+	const { useOrganization, useOrganizationList } = useCommonClerkOrganizatios();
 
-export const sidebarMethod = ()=> {
-	return ( {
-		useLocalStorage:useCommonLocalStorage(),
-		useOrganization: useCommonUseOrganization().useOrganization,
-		useOrganizationList: useCommonUseOrganization().useOrganizationList,
-	} )
-}
-
-export const sideBarActions = ()=> {
-	const storageKey = "t-sidebar-state";
-	const { useLocalStorage, useOrganization, useOrganizationList } = sidebarMethod()
 	const [ expanded, setExpanded ] = useLocalStorage<Record<string, any>>(
 		storageKey,
 		{}

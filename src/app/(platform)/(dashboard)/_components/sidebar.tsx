@@ -7,7 +7,9 @@ import { Plus } from "lucide-react";
 import { Accordion } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
-import { sideBarActions, SidebarProps } from "../_interface/ISideBar";
+import { sideBarActions } from "../_hooks/ISideBar";
+import { SidebarProps } from "../_interface/interface";
+import { NavItem } from "./nav-item";
 
 export const DashboardSidebar = ({
 	storageKey = "t-sidebar-state"
@@ -53,6 +55,7 @@ export const DashboardSidebar = ({
 				defaultValue={defaultAccordionValue}
 				className="space-y-2"
 			>
+				<NavItem />
 				{userMemberships.data?.map(({ organization }) => (
 					<p key={organization.id}>
 						{organization.id}

@@ -1,6 +1,6 @@
 import { useOrganization, useOrganizationList } from "@clerk/nextjs"
 
-export const useCommonUseOrganization = () => {
+export const useCommonClerkOrganizatios = () => {
 	return ({
 		useOrganization,
 		useOrganizationList
