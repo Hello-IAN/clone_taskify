@@ -5,10 +5,10 @@ export interface ISidebarProps {
 }
 
 export interface INavItemProps {
-  isExpanded: boolean;
   isActive: boolean;
-  organization: OrganizationResource;
+  isExpanded: boolean;
   onExpand: (id: string) => void;
+  organization: OrganizationResource;
 }
 
 export interface INavItemRoute {
