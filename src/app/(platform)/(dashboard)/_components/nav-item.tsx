@@ -1,7 +1,5 @@
-import Image from "next/image"
+import { AccordionItem } from "@/components/ui/accordion"
 
-import { AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { cn } from "@/lib/utils"
 
 import { INavItemProps } from "../_interface/IDashboard"
 import { getOrganizationRoutes } from "../_utils/getOrganizationRoutes"

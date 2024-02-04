@@ -1,6 +1,8 @@
+import Image from "next/image"
+
 import { AccordionTrigger } from "@/components/ui/accordion"
 import { cn } from "@/lib/utils"
-import Image from "next/image"
+
 import { INavItemProps } from "../_interface/IDashboard"
 
 export const NavItemAccordionTrigger = ({
