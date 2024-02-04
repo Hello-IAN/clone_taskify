@@ -1,6 +1,7 @@
 import { Activity, CreditCard, Layout, Settings } from "lucide-react";
 
 import { getSpecificUrlPath } from "@/components/commonFunctions/utils";
+import { INavItemRoute } from "../_interface/IDashboard";
 
 const getIcon = (label:string) => {
 	switch(label) {
@@ -15,14 +16,14 @@ const getIcon = (label:string) => {
 		default:
 			return <></>
 	}
-
 }
+
 export const getOrganizationRoutes = (labels:string[], id:string)=> {
 	return (labels.map((label) => {
 		return {
-			label:label,
-			icons:getIcon(label),
-			url:getSpecificUrlPath("/organization", id, label)
-		}
+			label: label,
+			icon: getIcon(label),
+			href: getSpecificUrlPath("/organization", id, label)
+		} as INavItemRoute
 	}))
 }

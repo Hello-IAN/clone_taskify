@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils"
 
 import { INavItemProps } from "../_interface/IDashboard"
 import { getOrganizationRoutes } from "../_utils/getOrganizationRoutes"
-import { Activity } from "lucide-react"
+import { NavItemAccordionContents } from "./nav-item-accordionContent"
 
 export const NavItem = ({
 	isExpanded,
@@ -13,10 +13,14 @@ export const NavItem = ({
 	organization,
 	onExpand
 }:INavItemProps) => {
-	const routes = [
-		getOrganizationRoutes(["Layout", "Activity", "Settings", "Billing"], organization.id),
-	]
-	console.log(routes)
+	const routes = getOrganizationRoutes([
+		"Layout", 
+		"Activity", 
+		"Settings", 
+		"Billing"], 
+		organization.id
+	);
+	
 	return (
 		<AccordionItem
 			value={organization.id}
@@ -43,6 +47,7 @@ export const NavItem = ({
 					</span>
 				</div>
 			</AccordionTrigger>
+			<NavItemAccordionContents routes={routes} />
 		</AccordionItem>
 	)
 }
