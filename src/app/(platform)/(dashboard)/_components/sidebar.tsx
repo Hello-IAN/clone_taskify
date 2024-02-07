@@ -6,10 +6,10 @@ import { Plus } from "lucide-react";
 
 import { Accordion } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { Skeleton } from "@/components/ui/skeleton";
 import { useGetSidebarActions } from "../_hooks/useGetSidebarActions";
 import { ISidebarProps } from "../_interface/IDashboard";
 import { NavItem } from "./nav-item";
+import { SideBarSkeleton } from "./sidebar-skeleton";
 
 export const DashboardSidebar = ({
 	storageKey = "t-sidebar-state"
@@ -28,7 +28,7 @@ export const DashboardSidebar = ({
 	if (loadingState)
 	return (
 		<>
-			<Skeleton />
+			<SideBarSkeleton />
 		</>
 	)
 
