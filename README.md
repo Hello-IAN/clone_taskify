@@ -23,3 +23,11 @@ Thanks.
 ## Images
 image will add soon!
 곧 추가 될 예정입니다.
+
+
+## Skill
+View: Next.js(with Typescript)
+State Management: Jotai
+DB: Prisma(with PlanetScale)
+UI: Shadcn-UI
+Auth: Clerk
