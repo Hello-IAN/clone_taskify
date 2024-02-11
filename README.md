@@ -26,8 +26,8 @@ image will add soon!
 
 
 ## Skill
-View: Next.js(with Typescript)
-State Management: Jotai
-DB: Prisma(with PlanetScale)
-UI: Shadcn-UI
-Auth: Clerk
+- View: Next.js(with Typescript)
+- State Management: Jotai
+- DB: Prisma(with PlanetScale)
+- UI: Shadcn-UI
+- Auth: Clerk
