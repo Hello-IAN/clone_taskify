@@ -20,3 +20,8 @@ export interface INavItemRoute {
 export interface INavItemAccordionContentsProps {
   routes:INavItemRoute[]
 }
+
+export interface IOrganizationBoardProps {
+  title: string;
+  id: string;
+}
