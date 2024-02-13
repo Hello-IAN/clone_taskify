@@ -4,7 +4,7 @@ import { createBoard } from "@/actions/create-board"
 import { Button } from "@/components/ui/button"
 import { useFormState } from "react-dom";
 
-export const ClientBoardForm = () => {
+export const ClientBoardFormView = () => {
 	const initialState = { message:"", errors:{}};
 	const [state, dispatch] = useFormState(createBoard, initialState);
 	return (
