@@ -1,4 +1,5 @@
 import { getAllTitle } from "@/actions/boardServerAction";
+
 import { Board } from "./board";
 
 export const OrganizationBoardItemView = async ()=> {

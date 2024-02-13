@@ -1,5 +1,4 @@
 import { create } from "@/actions/boardServerAction";
-
 import { Button } from "@/components/ui/button";
 
 export const OrganizationBoardFormView = () => {
