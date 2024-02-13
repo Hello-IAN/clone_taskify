@@ -25,3 +25,9 @@ export interface IOrganizationBoardProps {
   title: string;
   id: string;
 }
+
+export interface IOrganizationBoardInputProps {
+ errors?: {
+  title?:string[] 
+ }
+}
