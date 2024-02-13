@@ -1,12 +1,13 @@
 import { useFormStatus } from "react-dom";
 import { IOrganizationBoardInputProps } from "../../../_interface/IDashboard";
+import { Input } from "@/components/ui/input";
 
 export const ClientBoardInput = ({errors}:IOrganizationBoardInputProps) => {
 	const { pending } = useFormStatus();
 
 	return (
 		<div>
-			<input 
+			<Input 
 				id="title"
 				name="title"
 				required
