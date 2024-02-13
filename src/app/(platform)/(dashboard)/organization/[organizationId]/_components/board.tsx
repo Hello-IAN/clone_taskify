@@ -1,7 +1,7 @@
+import { deleteBoard } from "@/actions/boardServerAction";
 import { Button } from "@/components/ui/button";
 
 import { IOrganizationBoardProps } from "../../../_interface/IDashboard";
-import { deleteBoard } from "@/actions/boardServerAction";
 
 export const Board = ({
 	title,
