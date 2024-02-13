@@ -1,9 +1,11 @@
 "use client";
 
-import { createBoard } from "@/actions/create-board"
-import { Button } from "@/components/ui/button"
 import { useFormState } from "react-dom";
+
+import { createBoard } from "@/actions/create-board"
+
 import { ClientBoardInput } from "./clientBoardInput";
+import { ClientBoardButton } from "./clientBoardButton";
 
 export const ClientBoardFormView = () => {
 	const initialState = { message:"", errors:{}};
@@ -13,9 +15,7 @@ export const ClientBoardFormView = () => {
 			<div className="flex flex-col space-y-2">
 				<ClientBoardInput errors={state.errors} />
 			</div>
-			<Button type="submit">
-				Submit
-			</Button>
+			<ClientBoardButton />
 		</form>
 	)
 }
