@@ -1,6 +1,9 @@
+import { useFormStatus } from "react-dom";
 import { IOrganizationBoardInputProps } from "../../../_interface/IDashboard";
 
 export const ClientBoardInput = ({errors}:IOrganizationBoardInputProps) => {
+	const { pending } = useFormStatus();
+
 	return (
 		<div>
 			<input 
@@ -8,7 +11,8 @@ export const ClientBoardInput = ({errors}:IOrganizationBoardInputProps) => {
 				name="title"
 				required
 				placeholder="제목을 입력해주세요"
-				className="border-black border p-1" 
+				className="border-black border p-1"
+				disabled={pending}
 			/>
 			{ errors?.title ? (
 				<div>
