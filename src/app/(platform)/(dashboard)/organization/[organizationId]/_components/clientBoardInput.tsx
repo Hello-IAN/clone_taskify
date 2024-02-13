@@ -12,7 +12,6 @@ export const ClientBoardInput = ({errors}:IOrganizationBoardInputProps) => {
 				name="title"
 				required
 				placeholder="제목을 입력해주세요"
-				className="border-black border p-1"
 				disabled={pending}
 			/>
 			{ errors?.title ? (
