@@ -2,7 +2,7 @@ import { getAllTitle } from "@/actions/boardServerAction";
 
 import { Board } from "./board";
 
-export const OrganizationBoardItemView = async ()=> {
+export const OrganizationBoardItem = async ()=> {
 	const boardTitles = await getAllTitle()
 	return (
 		<div className="space-y-2">

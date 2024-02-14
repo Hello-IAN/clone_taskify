@@ -1,7 +1,7 @@
 import { deleteBoard } from "@/actions/boardServerAction";
-import { Button } from "@/components/ui/button";
 
 import { IOrganizationBoardProps } from "../../../_interface/IDashboard";
+import { BoardDeleteButton } from "./boardButton";
 
 export const Board = ({
 	title,
@@ -15,9 +15,7 @@ export const Board = ({
 			<p>
 				{title}
 			</p>
-			<Button type="submit" variant="destructive" size="sm">
-				Delete
-			</Button>
+			<BoardDeleteButton />
 		</form>
 	)
 }

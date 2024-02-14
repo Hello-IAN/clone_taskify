@@ -1,7 +1,7 @@
 import { createBoard } from "@/actions/boardServerAction";
 import { Button } from "@/components/ui/button";
 
-export const OrganizationBoardFormView = () => {
+export const OrganizationBoardForm = () => {
 	return (
 		<form action={createBoard}>
       <input 
