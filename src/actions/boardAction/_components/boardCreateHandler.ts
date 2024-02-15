@@ -1,5 +1,3 @@
-"use Server";
-
 import { revalidatePath } from "next/cache";
 
 import { auth } from "@clerk/nextjs";

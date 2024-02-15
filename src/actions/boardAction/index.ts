@@ -1,3 +1,5 @@
+"use server"
+
 import { createSafeAction } from "@/lib/create-safe-action";
 
 import { CreateBoard } from "./schema";
