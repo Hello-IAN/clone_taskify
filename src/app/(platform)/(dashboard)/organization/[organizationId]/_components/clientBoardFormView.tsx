@@ -1,19 +1,20 @@
 "use client";
-
-import { useFormState } from "react-dom";
-
-import { createBoard } from "@/actions/create-board"
+import { createBoard } from "@/actions/boardAction";
+import { useAction } from "@/hooks/ues-action";
+import { onSubmitToSingleTarget } from "@/components/commonFunctions/utils";
 
 import { ClientBoardInput } from "./clientBoardInput";
 import { ClientBoardButton } from "./clientBoardButton";
 
 export const ClientBoardFormView = () => {
-	const initialState = { message:"", errors:{}};
-	const [state, dispatch] = useFormState(createBoard, initialState);
+	const { execute, fieldErrors} = useAction(createBoard);
+	
+	const onSubmit = (formData:FormData) => onSubmitToSingleTarget(formData, "title", execute);
+
 	return (
-		<form action={dispatch}>
+		<form action={onSubmit}>
 			<div className="flex flex-col space-y-2">
-				<ClientBoardInput errors={state.errors} />
+				<ClientBoardInput errors={fieldErrors} />
 			</div>
 			<ClientBoardButton />
 		</form>
