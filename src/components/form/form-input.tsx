@@ -5,9 +5,9 @@ import { useFormStatus } from "react-dom";
 
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-
-import { IFormInputProps } from "@/Interface/ICommon";
 import { cn } from "@/lib/utils";
+
+import { IFormInputProps } from "./interface";
 import { FormErrors } from "./form-errors";
 
 export const FormInput = forwardRef<HTMLInputElement, IFormInputProps>(({

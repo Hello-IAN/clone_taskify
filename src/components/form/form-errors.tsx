@@ -1,6 +1,6 @@
 import { XCircle } from "lucide-react";
 
-import { IFormErrorsProps } from "@/Interface/ICommon";
+import { IFormErrorsProps } from "./interface";
 
 export const FormErrors = ({
 	id,
