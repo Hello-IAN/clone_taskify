@@ -7,7 +7,14 @@ import { ClientBoardInput } from "./clientBoardInput";
 import { ClientBoardButton } from "./clientBoardButton";
 
 export const ClientBoardFormView = () => {
-	const { execute, fieldErrors} = useAction(createBoard);
+	const { execute, fieldErrors} = useAction(createBoard, {
+		onSucess: (data) => {
+			console.log(data, "Pushing Data Success!");
+		},
+		onError: (error) => {
+			console.error(error);
+		}
+	});
 	
 	const onSubmit = (formData:FormData) => onSubmitToSingleTarget(formData, "title", execute);
 
