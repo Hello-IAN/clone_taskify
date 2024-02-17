@@ -1,9 +1,10 @@
 "use client";
+
 import { createBoard } from "@/actions/boardAction";
 import { useAction } from "@/hooks/ues-action";
 import { onSubmitToSingleTarget } from "@/components/commonFunctions/utils";
+import { FormInput } from "@/components/form/form-input";
 
-import { ClientBoardInput } from "./clientBoardInput";
 import { ClientBoardButton } from "./clientBoardButton";
 
 export const ClientBoardFormView = () => {
@@ -21,7 +22,10 @@ export const ClientBoardFormView = () => {
 	return (
 		<form action={onSubmit}>
 			<div className="flex flex-col space-y-2">
-				<ClientBoardInput errors={fieldErrors} />
+				<FormInput 
+					id="title"
+					errors={fieldErrors} 
+				/>
 			</div>
 			<ClientBoardButton />
 		</form>
