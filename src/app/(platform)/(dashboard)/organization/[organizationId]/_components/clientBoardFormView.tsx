@@ -4,8 +4,7 @@ import { createBoard } from "@/actions/boardAction";
 import { useAction } from "@/hooks/ues-action";
 import { onSubmitToSingleTarget } from "@/components/commonFunctions/utils";
 import { FormInput } from "@/components/form/form-input";
-
-import { ClientBoardButton } from "./clientBoardButton";
+import { FormSubmit } from "@/components/form/form-submit";
 
 export const ClientBoardFormView = () => {
 	const { execute, fieldErrors} = useAction(createBoard, {
@@ -28,7 +27,9 @@ export const ClientBoardFormView = () => {
 					errors={fieldErrors} 
 				/>
 			</div>
-			<ClientBoardButton />
+			<FormSubmit>
+				Save
+			</FormSubmit>
 		</form>
 	)
 }
