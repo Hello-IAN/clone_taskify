@@ -15,3 +15,10 @@ export interface IFormErrorsProps {
 	id: string;
 	errors?: Record<string, string[] | undefined>;
 }
+
+export interface IFormSubmitProps {
+	children: React.ReactNode;
+	disabled?: boolean;
+	className?: string;
+	variant?: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link" | "primary";
+}
