@@ -32,7 +32,7 @@ export const FormInput = forwardRef<HTMLInputElement, IFormInputProps>(({
 							htmlFor={id}
 							className="text-xs font-semibold text-neutral-700"
 						>
-							label
+							{label}
 						</Label>
 					) :
 					null

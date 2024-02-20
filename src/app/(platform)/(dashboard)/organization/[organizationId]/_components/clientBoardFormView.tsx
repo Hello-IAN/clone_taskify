@@ -22,7 +22,8 @@ export const ClientBoardFormView = () => {
 	return (
 		<form action={onSubmit}>
 			<div className="flex flex-col space-y-2">
-				<FormInput 
+				<FormInput
+					label="Board title"
 					id="title"
 					errors={fieldErrors} 
 				/>
