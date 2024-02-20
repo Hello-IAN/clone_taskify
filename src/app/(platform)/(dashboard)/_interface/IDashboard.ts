@@ -20,3 +20,7 @@ export interface INavItemRoute {
 export interface INavItemAccordionContentsProps {
   routes:INavItemRoute[]
 }
+
+export interface IOgarnizationInfoProps {
+  organization: OrganizationResource
+}
