@@ -13,7 +13,7 @@ export const InfoView = ({organization}:IOgarnizationInfoProps) => {
 					src={organization?.imageUrl}
 					alt="Organization"
 					className="rounded-md object-cover"
-					sizes="w-[60px] h-[60px]"
+					sizes="60px"
 					priority={true}
 				/>
 			</div>

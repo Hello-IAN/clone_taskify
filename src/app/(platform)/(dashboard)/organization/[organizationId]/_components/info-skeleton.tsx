@@ -4,7 +4,7 @@ export const InfoSkeleton = () => {
 	return (
 		<div className="flex items-center gap-x-4">
 			<div className="w-[60px] h-[60px] relative">
-				<Skeleton className="w-full h-full absolut"/>
+				<Skeleton className="w-full h-full absolute"/>
 			</div>
 			<div className="space-y-2">
 				<Skeleton className="h-10 w-[200px]"/>

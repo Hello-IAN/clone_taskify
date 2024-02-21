@@ -12,6 +12,7 @@ export const Info = () => {
 			<InfoSkeleton />
 		)
 	}
+	
 	return (
 		<InfoView organization={organization!} />
 
