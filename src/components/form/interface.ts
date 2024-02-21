@@ -1,3 +1,5 @@
+import { IHintProps } from "@/Interface/ICommon";
+
 export interface IFormInputProps {
 	id: string;
 	label?: string;
@@ -21,4 +23,8 @@ export interface IFormSubmitProps {
 	disabled?: boolean;
 	className?: string;
 	variant?: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link" | "primary";
+}
+
+export interface IFormPopOverProps extends IHintProps {
+	align?: "start" | "center" | "end";
 }

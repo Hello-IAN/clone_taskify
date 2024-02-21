@@ -10,3 +10,4 @@ export interface IHintProps {
 	side?: "left" | "right" | "top" | "bottom";
 	sideOffset?: number;
 }
+
