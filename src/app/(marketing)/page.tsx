@@ -20,6 +20,10 @@ const MarketingPage = () => {
           <Medal className="h-6 w-6 mr-2"/>
           No.1 업무 매니지먼트
         </div>
+        <div>
+          SHOWMEMEMEMEMEME
+          {BASE_URL}
+        </div>
         <h1 className="text-3xl md:text-6xl text-center text-neutral-800
         mb-6">
           Taskify는 팀을 이끌어갑니다.
