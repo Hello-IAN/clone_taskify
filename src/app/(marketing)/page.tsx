@@ -23,8 +23,8 @@ const MarketingPage = () => {
           No.1 업무 매니지먼트
         </div>
         <div>
+          SHOWMEMEMEMEMEME
           {BASE_URL}
-          test!!!!!!!!!
         </div>
         <h1 className="text-3xl md:text-6xl text-center text-neutral-800
         mb-6">
