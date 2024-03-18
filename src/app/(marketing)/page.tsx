@@ -2,6 +2,8 @@
 import { Medal } from "lucide-react"
 import Link from "next/link"
 import { Fira_Mono } from "next/font/google"
+const BASE_URL = process.env.BASE_URL;
+console.log(BASE_URL, 'inProd');
 
 /* in local file */ 
 import { Button } from "@/components/ui/button"
