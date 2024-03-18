@@ -7,6 +7,8 @@ import { Fira_Mono } from "next/font/google"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
+const BASE_URL = process.env.BASE_URL
+console.log(BASE_URL, 'inRelease');
 const fira_mono = Fira_Mono({ weight:"500", subsets: ['latin'] })
 const MarketingPage = () => {
   return (
