@@ -2,15 +2,13 @@
 import { Medal } from "lucide-react"
 import Link from "next/link"
 import { Fira_Mono } from "next/font/google"
-const BASE_URL = process.env.BASE_URL;
-console.log(BASE_URL, 'inProd');
 
 /* in local file */ 
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
-const BASE_URL = process.env.BASE_URL
-console.log(BASE_URL, 'inRelease');
+const BASE_URL = process.env.BASE_URL;
+
 const fira_mono = Fira_Mono({ weight:"500", subsets: ['latin'] })
 const MarketingPage = () => {
   return (
