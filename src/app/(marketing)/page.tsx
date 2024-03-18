@@ -22,7 +22,7 @@ const MarketingPage = () => {
         </div>
         <div>
           {BASE_URL}
-          test!!!!!!!!!
+          test!!!!!
         </div>
         <h1 className="text-3xl md:text-6xl text-center text-neutral-800
         mb-6">
